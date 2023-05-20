@@ -1,0 +1,14 @@
+  .avatar-image {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 50%;
+    padding-top: 20px;
+  }
+  .name {
+    display: flex;
+    justify-content: center;
+    color:ivory;
+    text-shadow: 0ch;
+  }
+  

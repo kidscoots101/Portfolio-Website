@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.avatar-image {
+    width: 20%;
+    height: 20%;
+    border-radius: "50%";   
+}
+.head {
+    font-family: 'Montserrat', sans-serif;
+    color: #E1E3FF
+}
+.name {
+    margin-top: 10px;
+}
+.arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+@keyframes typing {
+    from { width: 0; }
+  }
+  
+  #typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(30, end);
+  }
+  
+  #text {
+    display: inline-block;
+  }
+  

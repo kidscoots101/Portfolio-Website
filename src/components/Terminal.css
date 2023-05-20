@@ -1,0 +1,41 @@
+.terminal {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    width: 400px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .terminal-header {
+    background-color: #0c7cd5;
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  .terminal-body {
+    padding: 8px;
+  }
+  
+  .terminal-output {
+    margin: 0;
+  }
+  
+  .terminal-input {
+    display: flex;
+  }
+  
+  .terminal-prompt {
+    color: #0c7cd5;
+    margin-right: 5px;
+  }
+  
+  .terminal-input input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+  }
