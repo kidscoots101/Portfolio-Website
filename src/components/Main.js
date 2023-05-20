@@ -69,15 +69,14 @@ export default function Main() {
                 }}
               >
                 <text
-                  className="name"
+                  // className="name"
                   style={{
                     color: "#FFD700",
                     animation: "glowing 2s infinite",
                     fontSize: 75,
-                    // textDecoration: "underline",
                   }}
                 >
-                  CALEB HAN
+                  Caleb Han <br />
                 </text>
                 <text
                   className="head"
