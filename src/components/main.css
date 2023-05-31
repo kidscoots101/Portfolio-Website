@@ -44,4 +44,28 @@
   #text {
     display: inline-block;
   }
+  .parallax-container {
+    position: relative;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  parallaxLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+  
+  .parallax-layer-1 {
+    background-color: #ff0000; /* Replace with your desired background color */
+    z-index: 2; /* Adjust z-index to control the overlapping order */
+  }
+  
+  .parallax-layer-2 {
+    background-color: #00ff00; /* Replace with your desired background color */
+    z-index: 1;
+  }
   

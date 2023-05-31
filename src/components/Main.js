@@ -4,7 +4,9 @@ import { FaAngleDown } from "react-icons/fa";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import TypeWriterEffect from "react-typewriter-effect";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Home from "./Intro";
+import Home from "./Home";
+import Scroll from "./Scroll";
+import Skills from "./Skills";
 
 export default function Main() {
   const scrollRef = useRef(null);
@@ -35,10 +37,25 @@ export default function Main() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const url = (name, wrap = false) =>
+    `${
+      wrap ? "url(" : ""
+    }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
+      wrap ? ")" : ""
+    }`;
+  const parallax = useRef(null);
+
   return (
-    <Parallax pages={5}>
+    <Parallax pages={5} ref={parallax}>
+      <ParallaxLayer
+        offset={1}
+        speed={1}
+        style={{ backgroundColor: "#343543", opacity: 1 }}
+      />
+      <Scroll />
       <ParallaxLayer offset={0}>
         <div
+          id="body"
           style={{
             display: "flex",
             alignItems: "center",
@@ -50,7 +67,7 @@ export default function Main() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 150,
+              marginTop: 170,
             }}
           >
             <div>
@@ -82,7 +99,7 @@ export default function Main() {
                   className="head"
                   style={{ color: "#E1E3FF", fontSize: 35 }}
                 >
-                  ASPIRING FRONT-END
+                  I'M A FRONT-END
                   <br style={{ margin: "-10px 0" }} />
                   <span className="developer">DEVELOPER</span>
                 </text>
@@ -93,9 +110,9 @@ export default function Main() {
                     color: "#9BA4B5",
                     marginTop: 10,
                   }}
-                  cursorColor="#3F3D56"
-                  text={"There'll be a day..."}
-                  typeSpeed={140}
+                  cursorColor="#E1E3FF"
+                  text={"// i cannot back-end..."}
+                  typeSpeed={120}
                 />
               </div>
               <div
@@ -156,14 +173,27 @@ export default function Main() {
                 marginLeft: 80,
               }}
             />
-            <div className="arrow-down" onScroll={scrollToNextSection}>
+            {/* <div className="arrow-down" onScroll={scrollToNextSection}>
               <FaAngleDown style={{ color: "white" }} />
-            </div>
+            </div> */}
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1}>
+      <ParallaxLayer
+        offset={1}
+        // style={{ backgroundColor: "white" }}
+        speed={0.3}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        onClick={() => parallax.current.scrollTo(2)}
+      >
         <Home />
+      </ParallaxLayer>
+      <ParallaxLayer offset={2.2}>
+        <Skills />
       </ParallaxLayer>
     </Parallax>
   );
