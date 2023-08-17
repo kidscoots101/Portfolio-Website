@@ -29,40 +29,7 @@ const SplitPage = () => {
   };
 
   return (
-    // <div style={splitPageStyle}>
     <div>
-      {/* <div style={leftSideStyle}>
-        {isDrawerOpen && (
-          <div>
-            <button className="toggle-button" onClick={toggleDrawer}>
-              Toggle Drawer
-            </button>
-            <img
-              src={require("./assets/ProjectSF_Avatar copy.jpeg")}
-              className="avatar-image"
-            />
-            <h1 className="name">Caleb Han</h1>
-            <NavigationSide />
-          </div>
-        )}
-        {!isDrawerOpen && (
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <button className="toggle-button" onClick={toggleDrawer}>
-              <img
-                src={require("./assets/menu1.png")}
-                style={{ width: 50, height: 50 }}
-              />
-            </button>
-          </div>
-        )}
-      </div> */}
-
       <div style={rightSideStyle}>
         <Main />
       </div>

@@ -7,6 +7,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Home from "./Home";
 import Scroll from "./Scroll";
 import Skills from "./Skills";
+import Education from "./Education";
 
 export default function Main() {
   const scrollRef = useRef(null);
@@ -20,23 +21,23 @@ export default function Main() {
     }
   };
 
-  const handleScroll = () => {
-    const windowHeight = window.innerHeight;
-    const scrollPosition = window.scrollY;
-    const nextSectionOffset = scrollRef.current.offsetTop;
+  // const handleScroll = () => {
+  //   const windowHeight = window.innerHeight;
+  //   const scrollPosition = window.scrollY;
+  //   const nextSectionOffset = scrollRef.current.offsetTop;
 
-    if (scrollPosition + windowHeight >= nextSectionOffset) {
-      scrollToNextSection();
-    }
-  };
+  //   if (scrollPosition + windowHeight >= nextSectionOffset) {
+  //     scrollToNextSection();
+  //   }
+  // };
 
-  React.useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+  // React.useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   const url = (name, wrap = false) =>
     `${
       wrap ? "url(" : ""
@@ -46,7 +47,7 @@ export default function Main() {
   const parallax = useRef(null);
 
   return (
-    <Parallax pages={5} ref={parallax}>
+    <Parallax pages={3} ref={parallax}>
       <ParallaxLayer
         offset={1}
         speed={1}
@@ -67,7 +68,7 @@ export default function Main() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 170,
+              marginTop: 90,
             }}
           >
             <div>
@@ -192,8 +193,8 @@ export default function Main() {
       >
         <Home />
       </ParallaxLayer>
-      <ParallaxLayer offset={2.2}>
-        <Skills />
+      <ParallaxLayer offset={2}>
+        <Education />
       </ParallaxLayer>
     </Parallax>
   );

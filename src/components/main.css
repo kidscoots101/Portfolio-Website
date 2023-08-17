@@ -68,4 +68,21 @@
     background-color: #00ff00; /* Replace with your desired background color */
     z-index: 1;
   }
+  .top-navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(217, 217, 217, 0.15);
+    backdrop-filter: blur(15px);
+  }
+  
+  .top-navbar text {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #f0f0f0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+  }
   
