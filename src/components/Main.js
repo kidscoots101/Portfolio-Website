@@ -100,7 +100,7 @@ export default function Main() {
                   className="head"
                   style={{ color: "#E1E3FF", fontSize: 35 }}
                 >
-                  I'M A FRONT-END
+                  I'M A FULL-STACK
                   <br style={{ margin: "-10px 0" }} />
                   <span className="developer">DEVELOPER</span>
                 </text>
@@ -112,7 +112,7 @@ export default function Main() {
                     marginTop: 10,
                   }}
                   cursorColor="#E1E3FF"
-                  text={"// i cannot back-end..."}
+                  text={"// i live, breath and eat code..."}
                   typeSpeed={120}
                 />
               </div>
