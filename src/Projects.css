@@ -1,0 +1,46 @@
+/* Awards.css */
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1D1E2D;
+    color: #fff;
+    padding: 50px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .awards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .award-card {
+    background-color: #2E2F3E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .award-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .award-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .award-issuer,
+  .award-date {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
