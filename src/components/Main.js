@@ -61,6 +61,7 @@ export default function Main() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            height: '100vh'
           }}
         >
           <div
@@ -68,7 +69,7 @@ export default function Main() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 90,
+              alignSelf: 'center'
             }}
           >
             <div>
@@ -112,7 +113,7 @@ export default function Main() {
                     marginTop: 10,
                   }}
                   cursorColor="#E1E3FF"
-                  text={"// i live, breath and eat code..."}
+                  text={"// i live, breathe and eat code..."}
                   typeSpeed={120}
                 />
               </div>
