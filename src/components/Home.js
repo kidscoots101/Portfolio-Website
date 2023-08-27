@@ -16,18 +16,18 @@ export default function Intro() {
     {
       title: "CTO (React) of SST Inc.",
       description:
-        "Being promoted to CTO, I had the opportunity to create engaging lesson curriculum to help teach like-minded aspiring developers the React framework",
+        "Being promoted to CTO, I had the opportunity to create engaging lesson curriculum to help teach like-minded aspiring developers the React framework.",
       image: require("../assets/cto.jpeg"),
     },
     {
       title: "Task Force (React) of SST Inc.",
       description:
-        "I spent eight months aiding the CTOs teaching their React lesson curriculum,",
+        "I spent eight months aiding the CTOs teaching their React lesson curriculum.",
       image: require("../assets/task-force.jpeg"),
     },
     {
       title: "Founder and CEO of Growcalth",
-      description: "A small start-up founded by a group of friends. ",
+      description: "A small start-up founded by a group of friends.",
       image: require("../assets/groupsf.jpeg"),
     },
 
