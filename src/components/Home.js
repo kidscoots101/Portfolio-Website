@@ -35,17 +35,17 @@ export default function Intro() {
   ];
   return (
     <div className="my-experiences">
-      <h2 className="section-heading">My experiences</h2>
-      <div className="experience-cards">
-        {experiences.map((experience, index) => (
-          <ExperienceCard
-            key={index}
-            title={experience.title}
-            description={experience.description}
-            image={experience.image}
-          />
-        ))}
-      </div>
+    <h2 className="section-heading">My experiences</h2>
+    <div className="experience-cards">
+      {experiences.map((experience, index) => (
+        <ExperienceCard
+          key={index}
+          title={experience.title}
+          description={experience.description}
+          image={experience.image}
+        />
+      ))}
     </div>
+  </div>
   );
 }
