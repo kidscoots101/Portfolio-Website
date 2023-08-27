@@ -58,3 +58,15 @@
   font-family: 'Montserrat', sans-serif;
 
 }
+@media (max-width: 768px) {
+  .experience-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Add media query for screens between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
