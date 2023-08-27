@@ -48,7 +48,7 @@ const Projects = () => {
   const parallax = useRef(null);
 
   return (
-    <Parallax pages={2.7} ref={parallax} style={rightSideStyle}>
+    <Parallax pages={1} ref={parallax} style={rightSideStyle}>
       <Scroll />
       <ParallaxLayer offset={0}>
     <div style={rightSideStyle}>
