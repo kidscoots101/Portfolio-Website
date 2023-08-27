@@ -65,41 +65,29 @@ export default function Main() {
           }}
         >
           <div
+          className="stacked"
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              alignSelf: 'center'
+              alignSelf: 'center',
             }}
           >
             <div>
               <div
                 style={{
-                  color: "white",
-                  fontSize: 60,
-                  fontWeight: "bold",
-                }}
-              ></div>
-              <div
-                style={{
-                  color: "white",
                   fontSize: 60,
                   fontWeight: "bold",
                 }}
               >
                 <text
-                  // className="name"
-                  style={{
-                    color: "#FFD700",
-                    animation: "glowing 2s infinite",
-                    fontSize: 75,
-                  }}
+                  className="calebhan"
                 >
                   Caleb Han <br />
                 </text>
                 <text
                   className="head"
-                  style={{ color: "#E1E3FF", fontSize: 35 }}
+                  // style={{ color: "#E1E3FF", fontSize: 35 }}
                 >
                   I'M A FULL-STACK
                   <br style={{ margin: "-10px 0" }} />
@@ -113,7 +101,7 @@ export default function Main() {
                     marginTop: 10,
                   }}
                   cursorColor="#E1E3FF"
-                  text={"// i live, breathe and eat code..."}
+                  text={"// i live and breath code..."}
                   typeSpeed={120}
                 />
               </div>
@@ -172,7 +160,7 @@ export default function Main() {
                 width: "30%",
                 height: "30%",
                 borderRadius: "50%",
-                marginLeft: 80,
+                // marginLeft: 80,
               }}
             />
             {/* <div className="arrow-down" onScroll={scrollToNextSection}>
