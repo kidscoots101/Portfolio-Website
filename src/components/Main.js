@@ -45,6 +45,13 @@ export default function Main() {
       wrap ? ")" : ""
     }`;
   const parallax = useRef(null);
+  const isMobile = window.innerWidth <= 767;
+  const imageStyle = {
+    width: isMobile ? '40%' : '30%',
+    height: isMobile ? '40%' : '30%',
+    borderRadius: '50%',
+    // Other styles you want to apply
+  };
 
   return (
     <Parallax pages={3} ref={parallax}>
@@ -157,10 +164,10 @@ export default function Main() {
               src={require("../assets/SF.jpeg")}
               // className="avatar-image"
               style={{
-                width: "30%",
+                width: "40%",
                 height: "30%",
                 borderRadius: "50%",
-                // marginLeft: 80,
+                marginLeft: 30,
               }}
             />
             {/* <div className="arrow-down" onScroll={scrollToNextSection}>
@@ -182,7 +189,7 @@ export default function Main() {
       >
         <Home />
       </ParallaxLayer>
-      <ParallaxLayer offset={2}>
+      <ParallaxLayer offset={2.2}>
         <Education />
       </ParallaxLayer>
     </Parallax>
