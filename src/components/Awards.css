@@ -65,3 +65,36 @@
     font-size: 24px;
     color: #fdd835;
   }
+
+  @media (max-width: 768px) {
+    .awards-list {
+      width: 80%; /* Adjust the width as needed */
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Adjust card styling for smaller screens */
+  @media (max-width: 768px) {
+    .award-card {
+      padding: 15px; /* Adjust padding for smaller screens */
+      margin: 10px 0; /* Add some space between awards */
+    }
+  }
+  
+  /* Simplify award issuer styling for smaller screens */
+  @media (max-width: 768px) {
+    .award-issuer {
+      font-size: 14px; /* Reduce font size for smaller screens */
+      color: #666; /* Adjust color for better contrast */
+    }
+  }
+  
+  /* Simplify section title styling for smaller screens */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 28px; /* Reduce font size for smaller screens */
+      margin-bottom: 15px; /* Adjust margin for better spacing */
+      align-self: center;
+    }
+  }
+  
