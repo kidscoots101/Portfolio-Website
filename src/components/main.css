@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 .avatar-image {
-    width: 20%;
-    height: 20%;
-    border-radius: "50%";   
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  margin-left: 80,
 }
 .head {
     font-family: 'Montserrat', sans-serif;
-    color: #E1E3FF
+    color: #E1E3FF;
+    font-size: 35px;
 }
 .name {
     margin-top: 10px;
+}
+.calebhan {
+  color: #FFD700;
+  animation: "glowing 2s infinite";
+  font-size: 75px
+}
+.stacked {
+  display: "flex";
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 .arrow-down {
     position: absolute;
@@ -85,4 +98,59 @@
     cursor: pointer;
     font-weight: bold;
   }
+  /* Mobile Styles */
+@media (max-width: 768px) {
+  /* .avatar-image {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 10px;
+    align-self: center;
+  } */
+  .calebhan {
+    font-size: 40px;
+  }
+  .stacked {
+    display: "flex";
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column-reverse;
+  }
   
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head {
+    font-size: 24px; /* Adjust the font size for mobile */
+    text-align: center;
+  }
+
+  .name {
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .arrow-down {
+    font-size: 24px;
+    text-align: center;
+  }
+  .avatar-image {
+    width: 40%;
+    height: 40%;
+  }
+
+  .head {
+    font-size: 24px;
+  }
+
+  .name {
+    margin-top: 5px;
+  }
+
+  .arrow-down {
+    font-size: 24px;
+  }
+}
