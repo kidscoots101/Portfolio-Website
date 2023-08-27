@@ -57,4 +57,23 @@
     margin: 5px 0;
     color: #777;
   }
+  @media (max-width: 768px) {
+    .education-list {
+      width: 100%; /* Take up full width on mobile */
+      padding: 0 10px; /* Add some padding to the sides for better spacing */
+    }
   
+    .education-card {
+      padding: 15px; /* Reduce padding for cards on mobile */
+    }
+  
+    .education-image {
+      width: 80px; /* Decrease the image size on mobile */
+      height: 80px;
+      margin-right: 10px;
+    }
+  
+    .education-degree {
+      font-size: 18px; /* Slightly decrease font size for degree on mobile */
+    }
+  }
