@@ -7,31 +7,31 @@ import Scroll from './Scroll';
 const projectsdata = [
     {
       title: "AttendINC",
-      issuer: "National University of Singapore (NUS)",
+      issuer: "SST Inc.",
       date: "Aug 2023",
       description: "Associated with School of Science and Technology, Singapore",
     },
     {
       title: "SST House Points (GrowCalth)",
-      issuer: "Global FinTech Hackcelerator",
+      issuer: "SST Inc.",
       date: "Jul 2023",
       description: "Associated with School of Science and Technology, Singapore",
     },
     {
       title: "Investigation of the wine yeast on the fermentation on the different types of rice",
-      issuer: "Singapore Computer Society (SCS)",
+      issuer: "School of Science and Technology",
       date: "Jun 2023",
       description: "Associated with School of Science and Technology, Singapore",
     },
     {
       title: "Making Greywater Safe",
-      issuer: "iBuildSG",
+      issuer: "School of Science and Technology",
       date: "Jun 2023",
       description: "Associated with School of Science and Technology, Singapore",
     },
     {
       title: "KKH Paediatrics Handbook Revamp",
-      issuer: "SSTComputing+",
+      issuer: "SST Inc.",
       date: "Apr 2023",
       description: "Associated with School of Science and Technology, Singapore",
     },
